@@ -1,0 +1,51 @@
+.container3-contents1,
+.container3-contents2 {
+    width: 50%; /* Set both sections to the same width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    border: 1px solid red; /* For visualization */
+}
+
+.container3-contents2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    align-items: center; /* Align grid items vertically */
+}
+
+.container3-contents1 table {
+    width: 100%; /* Table fills the container */
+    height: 50%; /* Adjust table height as needed */
+    border-collapse: collapse;
+}
+
+.container3-contents1 th,
+.container3-contents1 td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; /* Vertically align table content */
+}
+
+.container3-contents2 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    height: 100%; /* Make each item take up full height */
+}
+
+.item h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.item p {
+    font-size: 1em;
+}
+
+/* Optional: Adjusting the table header for a cleaner look */
+.container3-contents1 th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
